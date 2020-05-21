@@ -16,25 +16,87 @@
   </head>
   <body>
     <div class = "container-fluid container_1">
-      <div class = "row row_1">
-          <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="card">
-              <h5 class="card-header">COVID-19 Cases by Senate District</h5>
-              <div class="card-body">
-                <iframe class="embed-responsive-item fill" src="covid_cases_leaflet_1.html" allowfullscreen style="border:0" ></iframe>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="county-tab" data-toggle="tab" href="#county" role="tab" aria-controls="county" aria-selected="true">County</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="senate-tab" data-toggle="tab" href="#senate" role="tab" aria-controls="senate" aria-selected="false">Senate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="house-tab" data-toggle="tab" href="#house" role="tab" aria-controls="house" aria-selected="false">House</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content tab0 nav_margin" id="myTabContent1">
+        
+          <div class="tab-pane fade show active tab0" id="county" role="tabpanel" aria-labelledby="county-tab">
+            <ul class="nav nav-tabs nav-fill" id="myTab-county" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="county1-tab" data-toggle="tab" href="#county1" role="tab" aria-controls="county1" aria-selected="true">All Cases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="county2-tab" data-toggle="tab" href="#county2" role="tab" aria-controls="county2" aria-selected="false">Nursing Homes Cases</a>
+              </li>
+            </ul>
+            <div class="tab-content tab0 nav_margin" id="myTabContent-county">
+              <div class="tab-pane fade show active tab0" id="county1" role="tabpanel" aria-labelledby="county1-tab">
+                <iframe class="embed-responsive-item fill" src="maps/county_all_cases.html" allowfullscreen style="border:0" ></iframe>
+              </div>
+              <div class="tab-pane fade tab0" id="county2" role="tabpanel" aria-labelledby="county2-tab">
+                <iframe class="embed-responsive-item fill" src="maps/county_nh_cases.html" allowfullscreen style="border:0" ></iframe>
               </div>
             </div>
           </div>
-          <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6"> Test2
+        
+        
+        
+        
+          <div class="tab-pane fade show tab0" id="senate" role="tabpanel" aria-labelledby="senate-tab">
+            <ul class="nav nav-tabs nav-fill" id="myTab-senate" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="senate1-tab" data-toggle="tab" href="#senate1" role="tab" aria-controls="senate1" aria-selected="false">All Cases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="senate2-tab" data-toggle="tab" href="#senate2" role="tab" aria-controls="senate2" aria-selected="false">Nursing Homes Cases</a>
+              </li>
+            </ul>
+            <div class="tab-content tab0 nav_margin" id="myTabContent-senate">
+              <div class="tab-pane fade show active tab0" id="senate1" role="tabpanel" aria-labelledby="senate1-tab">
+                <iframe class="embed-responsive-item fill" src="maps/senate_all_cases.html" allowfullscreen style="border:0" ></iframe>
+              </div>
+              <div class="tab-pane fade tab0" id="senate2" role="tabpanel" aria-labelledby="senate2-tab">
+                <iframe class="embed-responsive-item fill" src="maps/senate_nh_cases.html" allowfullscreen style="border:0" ></iframe>
+              </div>
+            </div>
           </div>
-      </div>
-      <div class = "row row_1">
-          <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6"> Test3
-          </div>
-          <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6"> Test4
-          </div>
+        
+        
+        
+        <div class="tab-pane fade show tab0" id="house" role="tabpanel" aria-labelledby="house-tab">
+          <ul class="nav nav-tabs nav-fill" id="myTab-house" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="house1-tab" data-toggle="tab" href="#house1" role="tab" aria-controls="house1" aria-selected="false">All Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="house2-tab" data-toggle="tab" href="#house2" role="tab" aria-controls="house2" aria-selected="false">Nursing Homes Cases</a>
+            </li>
+          </ul>
+          <div class="tab-content tab0 nav_margin" id="myTabContent-house">
+            <div class="tab-pane fade show active tab0" id="house1" role="tabpanel" aria-labelledby="house1-tab">
+              <iframe class="embed-responsive-item fill" src="maps/house_all_cases.html" allowfullscreen style="border:0" ></iframe>
+            </div>
+            <div class="tab-pane fade tab0" id="house2" role="tabpanel" aria-labelledby="house2-tab">
+              <iframe class="embed-responsive-item fill" src="maps/house_nh_cases.html" allowfullscreen style="border:0" ></iframe>
+            </div>
+        </div>
       </div>
     </div>
+  </div>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
