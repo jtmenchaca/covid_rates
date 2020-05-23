@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class = "container-fluid container_1">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="county-tab" data-toggle="tab" href="#county" role="tab" aria-controls="county" aria-selected="true">County</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="senate-tab" data-toggle="tab" href="#senate" role="tab" aria-controls="senate" aria-selected="false">Senate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="house-tab" data-toggle="tab" href="#house" role="tab" aria-controls="house" aria-selected="false">House</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content tab0 nav_margin" id="myTabContent1">
+        
+          <div class="tab-pane fade show active tab0" id="county" role="tabpanel" aria-labelledby="county-tab">
+            <ul class="nav nav-tabs nav-fill" id="myTab-county" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="county1-tab" data-toggle="tab" href="#county1" role="tab" aria-controls="county1" aria-selected="true">All Cases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="county2-tab" data-toggle="tab" href="#county2" role="tab" aria-controls="county2" aria-selected="false">Nursing Homes Cases</a>
+              </li>
+            </ul>
+            <div class="tab-content tab0 nav_margin" id="myTabContent-county">
+              <div class="tab-pane fade show active tab0" id="county1" role="tabpanel" aria-labelledby="county1-tab">
+                <iframe class="embed-responsive-item fill" src="maps/county_all_cases.html" allowfullscreen style="border:0" ></iframe>
+              </div>
+              <div class="tab-pane fade tab0" id="county2" role="tabpanel" aria-labelledby="county2-tab">
+                <iframe class="embed-responsive-item fill" src="maps/county_nh_cases.html" allowfullscreen style="border:0" ></iframe>
+              </div>
+            </div>
+          </div>
+        
+        
+        
+        
+          <div class="tab-pane fade show tab0" id="senate" role="tabpanel" aria-labelledby="senate-tab">
+            <ul class="nav nav-tabs nav-fill" id="myTab-senate" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="senate1-tab" data-toggle="tab" href="#senate1" role="tab" aria-controls="senate1" aria-selected="false">All Cases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="senate2-tab" data-toggle="tab" href="#senate2" role="tab" aria-controls="senate2" aria-selected="false">Nursing Homes Cases</a>
+              </li>
+            </ul>
+            <div class="tab-content tab0 nav_margin" id="myTabContent-senate">
+              <div class="tab-pane fade show active tab0" id="senate1" role="tabpanel" aria-labelledby="senate1-tab">
+                <iframe class="embed-responsive-item fill" src="maps/senate_all_cases.html" allowfullscreen style="border:0" ></iframe>
+              </div>
+              <div class="tab-pane fade tab0" id="senate2" role="tabpanel" aria-labelledby="senate2-tab">
+                <iframe class="embed-responsive-item fill" src="maps/senate_nh_cases.html" allowfullscreen style="border:0" ></iframe>
+              </div>
+            </div>
+          </div>
+        
+        
+        
+        <div class="tab-pane fade show tab0" id="house" role="tabpanel" aria-labelledby="house-tab">
+          <ul class="nav nav-tabs nav-fill" id="myTab-house" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="house1-tab" data-toggle="tab" href="#house1" role="tab" aria-controls="house1" aria-selected="false">All Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="house2-tab" data-toggle="tab" href="#house2" role="tab" aria-controls="house2" aria-selected="false">Nursing Homes Cases</a>
+            </li>
+          </ul>
+          <div class="tab-content tab0 nav_margin" id="myTabContent-house">
+            <div class="tab-pane fade show active tab0" id="house1" role="tabpanel" aria-labelledby="house1-tab">
+              <iframe class="embed-responsive-item fill" src="maps/house_all_cases.html" allowfullscreen style="border:0" ></iframe>
+            </div>
+            <div class="tab-pane fade tab0" id="house2" role="tabpanel" aria-labelledby="house2-tab">
+              <iframe class="embed-responsive-item fill" src="maps/house_nh_cases.html" allowfullscreen style="border:0" ></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
